@@ -1,0 +1,18 @@
+
+<div class="text-center">
+<h1> Add a new URL to shorten  </h1>
+<div class=" form-inline">
+<%= render 'form' %>
+</div>
+
+<div id=post> <p> Here is your long URL;</p>
+<%= @post.long_url %>
+</div>
+<p> Here is your short URL;</p>
+<%= link_to @posts.last.short_url, post_path(@posts.last.id), id: "new_link", remote: true %>
+
+</div>
+
+
+
+

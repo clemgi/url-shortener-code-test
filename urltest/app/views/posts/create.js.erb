@@ -1,0 +1,7 @@
+
+$("#post").html(" ");
+$('#new_link').html(" ");
+$('#post').append('<%= "Here is your long URL:" %> <%= @post.long_url %>');
+$('#post_long_url').val('');
+$('#new_link').append('<%= link_to @posts.last.short_url, post_path(@posts.last.id) %>');
+
