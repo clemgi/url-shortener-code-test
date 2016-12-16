@@ -7,6 +7,8 @@ class PostsController < ApplicationController
   def new
     @posts = Post.all
     @post = Post.new
+    @background = ["beach.jpg", "sky.jpg"].sample
+
   end
 
   def create

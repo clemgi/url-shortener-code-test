@@ -1,3 +1,63 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.banner{
+  background-size: cover;
+  height:100vh;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.banner h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+.banner p{
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+  margin-top:25px;
+  text-decoration: none;
+}
+
+#search_bar {
+  background-color: rgba(255,255,255,0.5);
+  padding: 10px;
+  border-radius: 5pt;
+  color: #666666;
+}
+
+.home-search {
+  padding: 10px;
+  border-radius: 5pt;
+  border: none;
+  color: #666666;
+}
+
+.search-btn {
+  color: white;
+  font-size: 15pt;
+  margin-left: 40px;
+}
+
+#new_link {
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+
+}
+
+#new_link a{
+  text-decoration: none;
+  color: black;
+  font-size: 50px;
+
+}
+
