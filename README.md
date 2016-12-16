@@ -19,3 +19,7 @@ don't spend more than a few hours on it.
 Please fork this repository, write some code and update this README with a guide of how to
 run it.
 
+## How To Run It
+
+It is an easy rails web app. There is only one view where the user can type a (super-long) URL and without refreshing the page, the webapp gives another short URL that redirect to the long URL.
+The redirection should be opened in another tab.
