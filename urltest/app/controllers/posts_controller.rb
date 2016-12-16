@@ -15,14 +15,14 @@ class PostsController < ApplicationController
     @posts = Post.all
     @post = Post.new(post_params)
     shorty_url = generate_short_url(6)
-    @post.short_url = "http://localhost:3000/" + "#{shorty_url}"
+    @post.short_url = "http://localhost:3000/" + "#{shorty_url}" || "https://secret-badlands-43466.herokuapp.com/" + "#{shorty_url}"
     if @post.save
       respond_to do |format|
         format.html { redirect_to "/" }
         format.js
       end
     else
-      @post.short_url = "http://localhost:3000/" + "#{generate_short_url(7)}"
+      @post.short_url = "http://localhost:3000/" + "#{generate_short_url(7)}" || "https://secret-badlands-43466.herokuapp.com/" + "#{shorty_url}"
       @post.save
       respond_to do |format|
         format.html { redirect_to "/"  }

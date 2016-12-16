@@ -3,7 +3,7 @@
   <div class="banner-content text-center">
 
     <h1> Amazing Url Shortener Service!  </h1>
-    <h2> Just type your super-long url in here  </h1>
+    <h2> Just type your super-long url in here  </h2>
       <div class=" form-inline">
         <%= render 'form' %>
       </div>
@@ -15,8 +15,8 @@
         <p> Here is your short URL;</p>
         <%= link_to @posts.last.short_url, post_path(@posts.last.id), id: "new_link", remote: true %>
       </div>
-    </div>
   </div>
+</div>
 
 
 
